@@ -20,10 +20,10 @@ export default function Home() {
   return (
     <>
       <h1 className={style.title}>Tranding today</h1>
-      <ul className={style.list}>
+      <ul>
         {movies &&
           movies.map(({ id, title }) => (
-            <li key={id} id={id}>
+            <li className={style.list} key={id} id={id}>
               <Link
                 to={{
                   pathname: `/movies/${`${id}`}`,
