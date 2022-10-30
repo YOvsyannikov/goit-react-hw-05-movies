@@ -66,7 +66,7 @@ export default function Movies() {
           </button>
         </form>
       </header>
-      <ul>
+      <ul className={style.list}>
         {movies.length > 0 &&
           movies.map(({ id, title, poster_path }) => (
             <li key={id} id={id}>
